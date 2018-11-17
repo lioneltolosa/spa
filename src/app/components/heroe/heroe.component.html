@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" [src]="heroe.img" [alt]="heroe.nombre">
+        <div class="card-body">
+            <h5 class="card-title">{{heroe.nombre}}</h5>
+            <p class="card-text">{{heroe.bio}}</p>
+            <small>{{heroe.aparicion}}</small>
+        </div>
+        <a [routerLink]="['/heroes']" class="btn btn-primary">Return</a>
+        <!-- <img *ngIf="heroe.casa =='DC'" src="" alt="DC">
+        <img *ngIf="heroe.casa =='Marvel'" class="card-img-top" src="" alt="Marbel"> -->
+    </div>
+</div>
