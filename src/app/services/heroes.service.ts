@@ -78,10 +78,13 @@ export class HeroesService {
     const heroesArr: Heroe[] = [];
     termino = termino.toLowerCase(); // Ayuda a la busqueda de mayusculas o minusculas
 
-    for ( const heroe of this.heroes ) {  // Busqueda con el ciclo for, pasar por nada nombre de todos los heroes
+    // for ( const heroe of this.heroes ) {  // Busqueda con el ciclo for, pasar por nada nombre de todos los heroes
+    for ( let i = 0; i < this.heroes.length; i++ ) {
+      const heroe = this.heroes[i];
       const nombre = heroe.nombre.toLowerCase();  // variable nombre donde se almacena la busqueda
 
       if (nombre.indexOf(termino) >= 0 ) {  // indexOf es para buscar un string dentro del nombre
+        heroe.idx = i;
         heroesArr.push( heroe);
       }
     }
@@ -97,4 +100,5 @@ export interface Heroe {
   img: string;
   aparicion: string;
   casa: string;
+  idx?: number;
 }
