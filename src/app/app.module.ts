@@ -18,6 +18,11 @@ import { HeroeTarjetaComponent } from './components/heroe-tarjeta/heroe-tarjeta.
 import { ItemsComponent } from './components/items/items.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 
+
+// Pipes
+import {CapitalizadoPipe} from './pipes/capitalizado.pipe';
+import {ContrasenaPipe} from './pipes/contrasena.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +34,9 @@ import { PipesComponent } from './components/pipes/pipes.component';
     BuscarComponent,
     HeroeTarjetaComponent,
     ItemsComponent,
-    PipesComponent
+    PipesComponent,
+    CapitalizadoPipe,
+    ContrasenaPipe
   ],
   imports: [
     BrowserModule,

@@ -87,6 +87,30 @@
                 <td> date:'medium' </td>
                 <td>{{fecha | date:'medium' }}</td>
             </tr>
+
+            <tr>
+                <td>{{nombre2}}</td>
+                <td> capitalizado </td>
+                <td>{{nombre2 | capitalizado:1:2:3:4:5}}</td>
+            </tr>
+
+            <tr>
+                <td>{{nombre2}}</td>
+                <td> capitalizado </td>
+                <td>{{nombre2 | capitalizado:false}}</td>
+            </tr>
+
+
+
+
+            <tr>
+                <td>{{nombre}}</td>
+                <td> contraseña: {{ active }}
+                    <br>
+                    <button (click)="active = !active" type="button" class="btn btn-primary">Activar/Desactivar</button>
+                </td>
+                <td>{{nombre | contrasena:active}}</td>
+            </tr>
         </tbody>
     </table>
 

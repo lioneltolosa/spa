@@ -10,6 +10,7 @@ import { reject } from 'q';
 export class PipesComponent implements OnInit {
 
   nombre: String = 'Lionel';
+  nombre2: String = 'Lionel miguel tolosa armas';
 
   arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
@@ -34,6 +35,8 @@ export class PipesComponent implements OnInit {
   });
 
   fecha = new Date();
+
+  active: Boolean = true;
 
   constructor() { }
 
