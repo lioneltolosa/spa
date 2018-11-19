@@ -12,10 +12,6 @@ export class ItemsService {
     console.log('Servicio listo de los items');
   }
 
-  // getItems(): Items[] {
-  //   return ITEMS;
-  // }
-
   getItems(): Observable<Items[]> {
     return of(ITEMS);
   }

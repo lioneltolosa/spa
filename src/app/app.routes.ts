@@ -7,6 +7,7 @@ import { HeroeComponent } from './components/heroe/heroe.component';
 import { BuscarComponent } from './components/buscar/buscar.component';
 import { ItemsComponent } from './components/items/items.component';
 import { PipesComponent } from './components/pipes/pipes.component';
+import { ExerciseComponent } from './components/exercise/exercise.component';
 
 const APP_ROUTES: Routes = [
     {path: 'home', component: HomeComponent},
@@ -16,6 +17,7 @@ const APP_ROUTES: Routes = [
     {path: 'buscar/:termino', component: BuscarComponent },
     {path: 'items', component: ItemsComponent },
     {path: 'pipes', component: PipesComponent},
+    {path: 'ejercice', component: ExerciseComponent},
     {path: '**', pathMatch: 'full', redirectTo: 'home'}
 ];
 

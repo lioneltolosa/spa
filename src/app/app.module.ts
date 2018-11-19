@@ -22,6 +22,7 @@ import { PipesComponent } from './components/pipes/pipes.component';
 // Pipes
 import {CapitalizadoPipe} from './pipes/capitalizado.pipe';
 import {ContrasenaPipe} from './pipes/contrasena.pipe';
+import { ExerciseComponent } from './components/exercise/exercise.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import {ContrasenaPipe} from './pipes/contrasena.pipe';
     ItemsComponent,
     PipesComponent,
     CapitalizadoPipe,
-    ContrasenaPipe
+    ContrasenaPipe,
+    ExerciseComponent
   ],
   imports: [
     BrowserModule,
