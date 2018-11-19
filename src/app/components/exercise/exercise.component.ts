@@ -22,7 +22,7 @@ export class ExerciseComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.peoples = this.exerciseService.getPeoples();
+    this.peoples = this.exerciseService.getPeople();
   }
 
 }

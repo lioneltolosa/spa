@@ -23,6 +23,7 @@ import { PipesComponent } from './components/pipes/pipes.component';
 import {CapitalizadoPipe} from './pipes/capitalizado.pipe';
 import {ContrasenaPipe} from './pipes/contrasena.pipe';
 import { ExerciseComponent } from './components/exercise/exercise.component';
+import { EjerciceTarjetaComponent } from './components/ejercice-tarjeta/ejercice-tarjeta.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ExerciseComponent } from './components/exercise/exercise.component';
     PipesComponent,
     CapitalizadoPipe,
     ContrasenaPipe,
-    ExerciseComponent
+    ExerciseComponent,
+    EjerciceTarjetaComponent
   ],
   imports: [
     BrowserModule,

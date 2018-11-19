@@ -1,11 +1,5 @@
-<div class="container">
-    <div *ngFor="let i of peoples" class="card text-white bg-success mb-3" style="max-width: 18rem;">
-        <div class="card-header">{{i.nombre}}</div>
-        <div class="card-body">
-            <h5 class="card-title">{{i.profesion}}</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-    </div>
+<div class="container mt-4">
+    <app-ejercice-tarjeta [people]="people" *ngFor="let people of peoples"></app-ejercice-tarjeta>
 </div>
 
-<pre>{{ peoples | json}}</pre>
+<pre>{{ peoples | json }}</pre>

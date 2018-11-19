@@ -6,7 +6,7 @@ import { Ejercice } from './ejercice';
 })
 export class ExerciseService {
 
-  private peoples: Ejercice[] = [
+  private people: Ejercice[] = [
       {
         nombre: 'Andrea',
         apellido: 'Sanchez',
@@ -32,7 +32,7 @@ export class ExerciseService {
 
   constructor() { }
 
-  getPeoples(): Ejercice[] {
-    return this.peoples;
+  getPeople(): Ejercice[] {
+    return this.people;
   }
 }
